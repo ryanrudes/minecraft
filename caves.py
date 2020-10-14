@@ -1,3 +1,8 @@
+import blocks
+from points import Point3D
+from tqdm import tqdm
+import numpy as np
+
 def fillOblateSpheroid(block, centerPos, radius, fillBlock):
     minx = max(0, int(centerPos.x - radius))
     maxx = min(block.shape[0], int(centerPos.x + radius))
@@ -14,7 +19,7 @@ def fillOblateSpheroid(block, centerPos, radius, fillBlock):
                 dz = z - centerPos.z
 
                 if dx ** 2 + 2 * dy ** 2 + dz ** 2 < radius ** 2:
-                    if block[x, z, y] == STONE:
+                    if block[x, z, y] == blocks.STONE:
                         block[x, z, y] = fillBlock
 
     return block
@@ -56,6 +61,6 @@ def carveOutCaves(block):
                 radius = 1.2 + (radius * 3.5 + 1) * caveRadius
                 radius = radius * np.sin(j * np.pi / caveLength)
 
-                block = fillOblateSpheroid(block, centerPos, radius, AIR)
+                block = fillOblateSpheroid(block, centerPos, radius, blocks.AIR)
 
     return block
