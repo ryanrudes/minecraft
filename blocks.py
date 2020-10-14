@@ -1,21 +1,21 @@
-import color
+import colors
 
 class Block:
     def __init__(self, color):
         self.color = color
 
 
-DANDELION = Block(color.PLANT)
-ROSE = Block(color.PLANT)
-MUSHROOM_RED = Block(color.RED)
-MUSHROOM_BROWN = Block(color.BROWN)
-AIR = Block(color.NONE)
-LEAVES = Block(color.PLANT)
-TRUNK = Block(color.WOOD)
-LAVA = Block(color.FIRE)
-STONE = Block(color.STONE)
-DIRT = Block(color.DIRT)
-WATER = Block(color.WATER)
-GRAVEL = Block(color.STONE)
-SAND = Block(color.SAND)
-GRASS = Block(color.GRASS)
+DANDELION = Block(colors.PLANT)
+ROSE = Block(colors.PLANT)
+MUSHROOM_RED = Block(colors.RED)
+MUSHROOM_BROWN = Block(colors.BROWN)
+AIR = Block(colors.NONE)
+LEAVES = Block(colors.PLANT)
+TRUNK = Block(colors.WOOD)
+LAVA = Block(colors.FIRE)
+STONE = Block(colors.STONE)
+DIRT = Block(colors.DIRT)
+WATER = Block(colors.WATER)
+GRAVEL = Block(colors.STONE)
+SAND = Block(colors.SAND)
+GRASS = Block(colors.GRASS)
