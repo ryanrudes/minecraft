@@ -1,3 +1,3 @@
-# Minecraft RL
+# Minecraft
 
-I will upload the rest of the code soon.
+Some code that resembles the various components of the procedural terrain generation algorithm employed by MC
