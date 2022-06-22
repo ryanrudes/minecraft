@@ -1,6 +1,6 @@
 pyglet==1.5.14
 tqdm==4.56.0
 matplotlib==3.3.4
-numpy==1.18.5
+numpy==1.22.0
 noise==1.2.2
 plotly==4.14.3
